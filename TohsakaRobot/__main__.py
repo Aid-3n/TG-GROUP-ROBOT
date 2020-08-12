@@ -19,13 +19,8 @@ from TohsakaRobot.modules.helper_funcs.chat_status import is_user_admin
 from TohsakaRobot.modules.helper_funcs.misc import paginate_modules
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
+**Hi {}, my name is {}!**
 I'm a group management bot with a few fun extras ;)
-
-The support chat is at @tohsakas
-
-Source code repository: [TheRealPhoenixBot](https://github.com/rsktg/TheRealPhoenixBot)
-My repository: [TheRealTohsakaBot](https://github.com/Dank-del/TheRealTohskaBot)
 
 
 You can find the list of available commands with /help
@@ -46,7 +41,7 @@ I'm a modular group management bot with a few fun extras!
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-RIN_IMG = "https://telegra.ph/file/2dc1c31660b79b7e3ce90.jpg"
+RIN_IMG = "https://tvguide2.cbsistatic.com/i/r/2020/06/26/ca1dd1b2-8ca6-4fe0-9a35-46f4c4f932e3/resize/1092x0/0e0de8cb3963daba591fb3f3574ee353/200626-dark-martha.jpg"
 
 DONATE_STRING = """I'm free for everyone uwu""".format(dispatcher.bot.first_name)
 
@@ -143,10 +138,10 @@ def start(bot: Bot, update: Update, args: List[str]):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(RIN_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
-                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Add Rin to your group",
+                parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Add Bot To U R Group⚡",
                                                                        url="t.me/{}?startgroup=true".format(bot.username))]]))
     else:
-        update.effective_message.reply_text("Yo, why'd you summon me?")
+        update.effective_message.reply_text("Hoi,What Happenned🤔🤔😒")
 
 
 # for test purposes
@@ -449,7 +444,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("Goin GOD-MODE")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()
