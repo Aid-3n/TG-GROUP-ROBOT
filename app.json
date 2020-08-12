@@ -2,7 +2,7 @@
    "addons": [
       {
          "options": {
-            "version": "9.5"
+            "version": "12"
          },
          "plan": "heroku-postgresql"
       }
@@ -33,11 +33,11 @@
       },
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
-         "value": "615304572"
+         "value": "636052499"
       },
       "OWNER_USERNAME": {
          "description": "Your username",
-         "value": "TheRealPhoenix"
+         "value": "AID_3N"
       },
       "PORT": {
          "description": "Port to use for your webhooks.",
@@ -50,11 +50,11 @@
       },
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
-         "value": "615304572 745191358"
+         "value": "1333751292"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
-         "value": "254318997 18673980 83489514"
+         "value": "1333751292"
       },
       "TOKEN": {
          "description": "Your bot token.",
